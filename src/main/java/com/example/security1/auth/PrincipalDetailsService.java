@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 
 // 시큐리티 설정에서 loginProcessingUrl을 /login으로 설정했기때문에
-// /login 요청이 오면 자동으로 UserDetailsService 타입으로 IoC되어있는 loadUserByUsername 메소드가 실행됨
+// /login 요청이 오면 자동으로 UserDetailsService 타입으로 IoC 되어있는 loadUserByUsername 메소드가 실행됨
 // 이때 loginForm.html 의 username 필드의 이름이 username으로 되어있어야 loadUserByName의 파라미터로 매핑이 되기때문에 이름 주의
 @RequiredArgsConstructor
 @Service
